@@ -1,8 +1,8 @@
 import React from "react";
-import './sidebar.css';
-import { PrimeIcons } from 'primereact/api';
+import './sidebar.css'
 
-const SideBar = () => {
+const SideBar = ({isActive}) => {
+
     const sidebarContent = [
         {
             label: 'Home',
@@ -24,7 +24,7 @@ const SideBar = () => {
                 sidebarContent.map(obj => 
                     <div>
                     <li>{obj.label}</li>
-                    <i className={obj.icon}></i>
+                    {isActive && <i className={obj.icon}></i>}
                     </div>
                     
             )}

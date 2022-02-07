@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import SideBar from "./components/SideBar";
+import Topbar from "./components/Topbar";
 
 const App = () => {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <div className="App">
-      <SideBar />
+      <Topbar setIsActive={setIsActive} isActive={isActive} />
+      <SideBar isActive={isActive} />
     </div>
   );
 };

@@ -1,7 +1,11 @@
+@import "~primeicons/primeicons.css";
+
+i {
+  font-size: 1rem;
+}
+
 .content {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-
-@import "~primeicons/primeicons.css";
